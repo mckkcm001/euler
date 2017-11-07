@@ -1,0 +1,10 @@
+f = open('sudoku.txt')
+g = open('euler50.txt','w')
+for i in range(50):
+  s = ''
+  f.readline()
+  for j in range(9):
+    s += f.readline().rstrip().replace('0','.')
+  g.write(s+'\n')
+f.close()
+g.close()
